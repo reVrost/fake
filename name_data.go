@@ -1,4 +1,4 @@
-package main
+package fake
 
 var maleFirstNames = [...]string{
 	"Aaron",
@@ -611,7 +611,7 @@ var maleFirstNames = [...]string{
 	"Jere",
 	"Jeremiah",
 	"Jeremy",
-	"Jermaine",
+	"Jerfakee",
 	"Jerold",
 	"Jerome",
 	"Jeromy",
@@ -1883,8 +1883,8 @@ var femaleFirstNames = [...]string{
 	"Charlotte",
 	"Charlsie",
 	"Charlyn",
-	"Charmain",
-	"Charmaine",
+	"Charfake",
+	"Charfakee",
 	"Charolette",
 	"Chasidy",
 	"Chasity",
@@ -2663,7 +2663,7 @@ var femaleFirstNames = [...]string{
 	"Geralyn",
 	"Gerda",
 	"Geri",
-	"Germaine",
+	"Gerfakee",
 	"Gerri",
 	"Gerry",
 	"Gertha",
@@ -4599,7 +4599,7 @@ var femaleFirstNames = [...]string{
 	"Rolanda",
 	"Rolande",
 	"Roma",
-	"Romaine",
+	"Rofakee",
 	"Romana",
 	"Romelia",
 	"Romona",
@@ -4814,7 +4814,7 @@ var femaleFirstNames = [...]string{
 	"Sharla",
 	"Sharleen",
 	"Sharlene",
-	"Sharmaine",
+	"Sharfakee",
 	"Sharolyn",
 	"Sharon",
 	"Sharonda",

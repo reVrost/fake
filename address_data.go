@@ -1,4 +1,4 @@
-package main
+package fake
 
 var streetSuffix = [...]string{
 	"Alley",

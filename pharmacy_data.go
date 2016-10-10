@@ -1,4 +1,4 @@
-package main
+package fake
 
 var drugNames = [...]string{
 	"Nexium",

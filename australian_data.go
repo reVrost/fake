@@ -1,4 +1,4 @@
-package main
+package fake
 
 var australianState = [...]string{
 	"ACT",
@@ -39,8 +39,8 @@ var australianSuburbs = [...]string{
 	"Badgerys Creek",
 	"Balgowlah",
 	"Balgowlah Heights",
-	"Balmain",
-	"Balmain East",
+	"Balfake",
+	"Balfake East",
 	"Bangor",
 	"Banksia",
 	"Banksmeadow",
