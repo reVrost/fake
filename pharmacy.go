@@ -5,24 +5,24 @@ import (
 	"strconv"
 )
 
-type PharmacyGen struct{}
+type pharmacyGen struct{}
 
-var Pharmacy = &PharmacyGen{}
+var Pharmacy = &pharmacyGen{}
 
-func (pg *PharmacyGen) Drug() string {
+func (pg *pharmacyGen) Drug() string {
 	return drugNames[random.Intn(len(drugNames))]
 }
 
-func (pg *PharmacyGen) Strength() string {
+func (pg *pharmacyGen) Strength() string {
 	str := strconv.Itoa(random.Intn(9999) * 5 % 500)
 	units := [2]string{"mg", "mL"}
 	return fmt.Sprintf("%s %s", str, units[random.Intn(2)])
 }
 
-func (pg *PharmacyGen) FullDrug() string {
+func (pg *pharmacyGen) FullDrug() string {
 	return fmt.Sprintf("%s %s", pg.Drug(), pg.Strength())
 }
 
-func (pg *PharmacyGen) Form() string {
+func (pg *pharmacyGen) Form() string {
 	return drugForms[random.Intn(len(drugForms))]
 }

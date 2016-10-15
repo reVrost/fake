@@ -5,27 +5,27 @@ import (
 	"strconv"
 )
 
-type AddressGen struct{}
+type addressGen struct{}
 
-var Address = &AddressGen{}
+var Address = &addressGen{}
 
-func (ag *AddressGen) ZipCode(char int) string {
+func (ag *addressGen) ZipCode(char int) string {
 	return Number.Code(char)
 }
 
-func (ag *AddressGen) StreetSuffix() string {
+func (ag *addressGen) StreetSuffix() string {
 	return streetSuffix[random.Intn(len(streetSuffix))]
 }
 
-func (ag *AddressGen) StreetSuffixAbv() string {
+func (ag *addressGen) StreetSuffixAbv() string {
 	return streetSuffixAbv[random.Intn(len(streetSuffixAbv))]
 }
 
-func (ag *AddressGen) StreetName() string {
+func (ag *addressGen) StreetName() string {
 	return streets[random.Intn(len(streets))]
 }
 
-func (ag *AddressGen) Australian() string {
+func (ag *addressGen) Australian() string {
 	// "12/213 Gazilas Rd, Surry Hills NSW 2020"
 
 	return fmt.Sprintf(

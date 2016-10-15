@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-type NameGen struct{}
+type nameGen struct{}
 
 // Gender specifies a gender of a person
 type Gender int
@@ -16,13 +16,13 @@ const (
 )
 
 // Name generator
-var Name = &NameGen{}
+var Name = &nameGen{}
 
-func (ng *NameGen) LastName() string {
+func (ng *nameGen) LastName() string {
 	return lastNames[random.Intn(len(lastNames))]
 }
 
-func (ng *NameGen) FirstName(g Gender) string {
+func (ng *nameGen) FirstName(g Gender) string {
 	var firstName string
 	switch g {
 	case Male:
@@ -39,7 +39,7 @@ func (ng *NameGen) FirstName(g Gender) string {
 	return firstName
 }
 
-func (ng *NameGen) FullName(g Gender) string {
+func (ng *nameGen) FullName(g Gender) string {
 	return fmt.Sprintf(
 		"%s %s",
 		ng.FirstName(g),
